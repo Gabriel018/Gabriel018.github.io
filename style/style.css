@@ -1,15 +1,12 @@
 body  {background-color: black;}
-h1,a {color: white;
+h1,h3,a {color: white;
     font-style: normal;
     font-weight: normal;
     color: white;
     font-family: 'Times New Roman', Times, serif;
     }
-h3 {color: white;
-    font-family: Sans-serif;
-    font-weight: normal;
-    font-style: normal; 
-    }
+
+
 .cabecalho { display: flex;
               flex-direction: row;
               justify-content: flex-end;
@@ -32,38 +29,59 @@ h3 {color: white;
 }
 
 .cabecalho-menu{ 
+                
                 display: flex;
                 font-weight:900;
                 color: white;
                 font-size: 36px;
+                text-decoration:none;
                 font-family: 'Times New Roman', Times, serif;
                 font-style: italic;
+
                 flex-direction: row;
                 justify-content:right ;
                 align-items:flex-start;
                 gap: 80px;
               
 }
-.cabecalho-menu:hover {font-size: 40px;}
+.cabecalho-menu:hover {font-size: 40px; }
 
 
 .cabecalho-center { 
-                    padding-top: 10px;
+                    font-weight:900;
+                    padding-top: 0px;
                     padding-left: 10px;
-                    text-align: start;
+              
                                       
 }
 
 .contato {
+      padding-top: 300px;
+      margin-bottom: 300px;
       justify-content: space-around;
       color: white;
       font-size: 36px;
       gap: 90px;
       display: flex;
+      text-decoration:none;
       justify-content: center;}
 
 .contato:hover,.contato_img:hover {font-size: 39px;}      
 .contato_img {
     display: flex;
+    text-decoration:none;
     flex-direction: row;
 }
+
+.projeto { background-color: brown;padding-bottom: 800px;
+    justify-content: space-around;
+    color: white;
+    font-size: 36px;
+    gap: 90px;
+    display: flex;
+    text-decoration:none;
+    justify-content: center;}
+
+.scroll { overflow-y: scroll;
+    scroll-snap-type: x;
+    scroll-behavior: smooth;}
