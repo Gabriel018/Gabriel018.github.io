@@ -1,8 +1,7 @@
 body  {background-color: black;}
-h1,h3,a {color: white;
-    font-style: normal;
+h1,h2,h3,a {color: white;
+    font-style:italic;
     font-weight: normal;
-    color: white;
     font-family: 'Times New Roman', Times, serif;
     }
 
@@ -47,13 +46,17 @@ h1,h3,a {color: white;
 .cabecalho-menu:hover {font-size: 40px; }
 
 
-.cabecalho-center { 
-                    font-weight:900;
-                    padding-top: 0px;
-                    padding-left: 10px;
-              
-                                      
-}
+.cabecalho-center { padding-top: 0px;
+                    padding-left: 10px;}
+
+.cabecalho-center_txt { 
+                        
+                        font-family: 'Times New Roman', Times, serif;
+                        font-weight:900;
+                        padding-left: 40px;
+}                   
+                                                   
+
 
 .contato {
       padding-top: 300px;
@@ -73,7 +76,7 @@ h1,h3,a {color: white;
     flex-direction: row;
 }
 
-.projeto { background-color: brown;padding-bottom: 800px;
+.projeto {padding-bottom: 800px;
     justify-content: space-around;
     color: white;
     font-size: 36px;
@@ -85,3 +88,5 @@ h1,h3,a {color: white;
 .scroll { overflow-y: scroll;
     scroll-snap-type: x;
     scroll-behavior: smooth;}
+
+img { width: 60;}    
