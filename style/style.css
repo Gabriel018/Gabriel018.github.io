@@ -59,31 +59,37 @@ h1,h2,h3,a {color: white;
 
 
 .contato {
-      padding-top: 300px;
+      background-color: rgb(28,28,28);
+      display: flex;
+      padding-top: 200px;
       margin-bottom: 300px;
-      justify-content: space-around;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      align-self:center;
       color: white;
       font-size: 36px;
-      gap: 90px;
+      gap: 30px;
       display: flex;
-      text-decoration:none;
-      justify-content: center;}
+      text-decoration:none;}
 
 .contato:hover,.contato_img:hover {font-size: 39px;}      
 .contato_img {
+    justify-content:safe;
     display: flex;
     text-decoration:none;
     flex-direction: row;
 }
 
 .projeto {padding-bottom: 800px;
-    justify-content: space-around;
+    align-items: flex-start;
     color: white;
     font-size: 36px;
-    gap: 90px;
+    margin: 60px;
     display: flex;
     text-decoration:none;
-    justify-content: center;}
+    justify-content: space-evenly;}
+
+.projeto:hover {font-size: 40px;}    
 
 .scroll { overflow-y: scroll;
     scroll-snap-type: x;
