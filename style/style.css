@@ -15,15 +15,14 @@ h1,h2,h3,a {color: white;
 }
 
 .cabecalho-txt { display: flex;
-
-    color: white;
-    font-size: 42px;
-    font-family:Fantasy;
-    padding: 0px;
-    flex-direction: row;
-    justify-content: left;
-    justify-items: top;
-    gap: 80px;
+                color: white;
+                font-size: 42px;
+                font-family:Fantasy;
+                padding: 0px;
+                flex-direction: row;
+                justify-content: left;
+                justify-items: top;
+                gap: 80px;
      
 }
 
@@ -46,7 +45,7 @@ h1,h2,h3,a {color: white;
 .cabecalho-menu:hover {font-size: 40px; }
 
 
-.cabecalho-center { padding-top: 0px;
+.cabecalho-center {
                     padding-left: 10px;}
 
 .cabecalho-center_txt { 
@@ -57,12 +56,11 @@ h1,h2,h3,a {color: white;
 }                   
                                                    
 
-
 .contato {
       background-color: rgb(28,28,28);
-      display: flex;
       padding-top: 200px;
-      margin-bottom: 300px;
+      padding-bottom: 100px;
+      display: flex;
       justify-content: space-evenly;
       align-items: flex-start;
       align-self:center;
@@ -80,19 +78,22 @@ h1,h2,h3,a {color: white;
     flex-direction: row;
 }
 
-.projeto {padding-bottom: 800px;
-    align-items: flex-start;
-    color: white;
-    font-size: 36px;
-    margin: 60px;
-    display: flex;
-    text-decoration:none;
-    justify-content: space-evenly;}
-
-.projeto:hover {font-size: 40px;}    
-
-.scroll { overflow-y: scroll;
-    scroll-snap-type: x;
-    scroll-behavior: smooth;}
+.projeto { flex-direction: column;
+           display: flex;
+           padding-bottom: 100px;
+           background-color: brown;
+           color: white;
+           font-size: 36px;
+    }
+ 
+.projeto_logo  {display: flex;
+                    align-items: center;
+               flex-direction: column; }    
+ 
+.projeto_content {  
+                    display:inline;
+                    font-size: 22px;
+                    align-items:center; 
+}
 
 img { width: 60;}    
