@@ -86,16 +86,16 @@ h1,h2,h3,a {color: white;
            padding-bottom: 100px;
     }
  
-.projeto_logo  {display: flex;
+.projeto_logo  {    display: flex;
                     align-items: center;
-               flex-direction: column; }    
+                    flex-direction: column; }    
  
-.projeto_content {  margin-top: 200px;
+.projeto_content {  border: 3px;
+                    box-shadow: 0 4px 16px 0 rgba(184, 184, 91, 90);             
                     display:flex;
                     font-size: 22px;
-                    align-items: center;
-                    gap: 40px; 
-                    flex-direction: row;
+                    align-items:center;
+                    flex-direction: column;
 }
 
 .projeto-desktop { flex-direction: column;
