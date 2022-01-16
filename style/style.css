@@ -88,24 +88,27 @@ h1,h2,h3,a {color: white;
  
 .projeto_logo  {    display: flex;
                     align-items: center;
-                    
                     flex-direction: column; }    
  
-.projeto_content {  border: 3px;
+.projeto_content {  
                     display:flex;
                     gap: 400px;
-                    font-size: 22px;         
+                    font-size: 22px;
+                    justify-content: space-around;       
                     flex-direction: row;
                     align-items:center;
 
-
-                    
+                  
 }
 
-.projeto-desktop { flex-direction: column;
-
-    display: flex;
-    color: white;
-    font-size: 36px;}
+.projeto-desktop { flex-direction: row;
+                    display: flex;
+                    gap: 400px;
+                    color: white;
+                    justify-content: space-around;
+                    align-items:center;
+                    font-size: 22px;
+                    
+}
 
 img { width: 60;}    
