@@ -1,0 +1,27 @@
+img { height: 300px;
+    width: 400px;}
+
+.card {outline: 4px blue;
+        width: 420px;
+        height: 420px;
+        overflow: hidden;
+        box-shadow: 10px,10px, 10px,  rgb(10, 20, 255,0.5);
+        margin-left: 400px}
+
+.card ul {
+    display: flex;
+    list-style: none;
+    height: 300px;
+    width: 1200px;
+}
+
+ .card li {
+     position: relative;
+     animation: slider 15s infinite ease-out ;
+  }
+
+@keyframes slider {
+    0%{left: opx;}
+    50%{left: -440px;}
+    100%{left: -840px;}
+}
