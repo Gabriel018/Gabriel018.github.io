@@ -83,6 +83,10 @@ h1,h2,h3,a {color: white;
            height: 400px;
            align-items: center;
     }
+
+ 
+
+
  .projeto ul { display: flex;
                justify-content: space-around;
               
@@ -94,9 +98,13 @@ h1,h2,h3,a {color: white;
                 width: 290px;
                 height: 270px;}
 
+
+
+                
+
 .projeto img:hover { font-size: 50px;
-    width: 300px;
-    height: 290px;}             
+                      width: 300px;
+                      height: 290px;}             
 .projeto_logo {     padding-top: 100px;
                     box-shadow: none;
                     display: flex;
