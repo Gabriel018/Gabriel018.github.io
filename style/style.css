@@ -6,8 +6,8 @@ h1,h2,h3,a {color: white;
         font-weight: normal;
         font-family: 'Times New Roman', Times, serif;
     }
-
-
+html{scroll-behavior: smooth;}
+ 
  
 .cabecalho { display: flex;
               flex-direction: row;
