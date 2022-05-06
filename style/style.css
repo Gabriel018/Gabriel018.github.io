@@ -52,9 +52,6 @@ html{scroll-behavior: smooth;}
 .cabecalho-menu:hover {font-size: 40px; }
 
 
-.cabecalho-center { 
-                     
-                    }
 
 .cabecalho-center_txt {
                         display: flex;
@@ -178,10 +175,11 @@ html{scroll-behavior: smooth;}
     .cabecalho {  
         
       flex-direction: column;
-      gap: 0;
+      gap: 8px;
                       
     }
     .cabecalho-center{
+
         text-align: center;    
     }
 
