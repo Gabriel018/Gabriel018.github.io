@@ -1,6 +1,6 @@
 
 body  {background-color: black;}
-h1,h2,h3,a {color: white;
+h1,h2,h3,a,p,li {color: white;
         text-decoration:none;
         list-style: none;
         font-style:italic;
@@ -170,6 +170,11 @@ html{scroll-behavior: smooth;}
 
                                font-size: 28px;}
 
+
+
+ .xp{
+     font-size: 28px ;
+ }
 @media screen and (max-width: 390px){
 
     .cabecalho {  
@@ -184,6 +189,8 @@ html{scroll-behavior: smooth;}
     }
 
     .contato {
+        padding-top:50px;
+        padding-bottom: 50px;
         flex-direction: column;
     }
 
