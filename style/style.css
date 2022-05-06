@@ -173,9 +173,6 @@ html{scroll-behavior: smooth;}
 
                                font-size: 28px;}
 
-
-
-
 @media screen and (max-width: 390px){
 
     .cabecalho {  
@@ -185,6 +182,16 @@ html{scroll-behavior: smooth;}
                       
     }
     .cabecalho-center{
-        text-align: center;
+        text-align: center;    
     }
+
+    .contato {
+        flex-direction: column;
+    }
+
+    .projeto ul {
+        padding-top: 300px;
+        flex-direction: column;
+    }
+     
 }
