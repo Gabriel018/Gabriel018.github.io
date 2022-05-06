@@ -191,7 +191,16 @@ html{scroll-behavior: smooth;}
 
     .projeto ul {
         padding-top: 300px;
+        padding-bottom: 300px;
         flex-direction: column;
     }
-     
+
+    .desktop ul{
+        padding-top: 300px;
+        padding-bottom: 300px;
+        flex-direction: column;
+
+    }
+    
+   
 }
