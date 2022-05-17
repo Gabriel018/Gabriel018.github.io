@@ -9,6 +9,9 @@ h1,h2,h3,a {color: white;
     }
 html{scroll-behavior: smooth;}
 
+#text {
+    font-size: 30px;
+}
 
 .cabecalho { display: flex;
               flex-direction: row;

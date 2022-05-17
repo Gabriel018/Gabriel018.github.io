@@ -1,24 +1,36 @@
 const DisplayText =  document.getElementById('text');   
-const frase =  ['Ola Mundo','E hora do codigo']
+const frase =  ['Ola,Meu nome e Gabriel {Duke}']
 let i = 0
 let j = 0
-
+let isDelete = false
+let Frase_Completa = []
 function loop () {
-
-
+   DisplayText.innerHTML = Frase_Completa.join('')
    if (i < frase.length){
-    console.log(frase[i]);
-    if (j < frase[i].length){
-        console.log(frase[i][j]); 
-    }
-    j++;
-    setInterval(loop,500);
-}     
+    
 
-    if ( j == frase[i].length){
-        i++;
-        
-    }
+        if ( !isDelete && j <= frase[i].length){
+            Frase_Completa.push(frase[i][j])
+            j++ 
+            console.log('Adicionando')  
+        }     
+        if ( isDelete && j <= frase[i].length){
+            Frase_Completa.pop(frase[i][j])
+            console.log('Removendo') 
+            j--
+        } 
+
+        }
+    
+        if ( j == frase[i].length){
+            isDelete = true
+            
+
+            
+        }
+    setTimeout(loop,100);
 }
+
+
 
 loop()
