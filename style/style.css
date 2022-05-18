@@ -9,6 +9,24 @@ h1,h2,h3,a {color: white;
     }
 html{scroll-behavior: smooth;}
 
+h3::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+
 #text {
     font-size: 30px;
 }
