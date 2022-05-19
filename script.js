@@ -24,22 +24,15 @@ function loop () {
         if (i === frase.length){
             i = 0
             
-            
         }
 
         }
-    
         if ( j == frase[i].length){
-            isDelete = true
-            
-
-            
+            isDelete = true  
         }
 
     const  time = isDelete ? 30 : 80
     setTimeout(loop, time)
 }
-
-
 
 loop()

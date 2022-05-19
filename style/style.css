@@ -26,6 +26,38 @@ h3::after {
     }
   }
 
+  .btn-txt:hover {
+    font-size: 32px;
+  }
+  .btn{
+    background-color: #6d1818;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+
+  }
+   
+  
+
+  .btn-txt{
+    
+    color: white;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .btn-div{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: auto;
+    text-align: center;
+  }
 
 #text {
     font-size: 30px;
@@ -96,6 +128,7 @@ h3::after {
       gap: 30px;
       display: flex;
       text-decoration:none;}
+
 
 .contato:hover,.contato_img:hover {font-size: 39px;}
 .contato_img {
