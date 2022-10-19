@@ -34,5 +34,4 @@ function loop () {
     const  time = isDelete ? 30 : 80
     setTimeout(loop, time)
 }
-
 loop()
