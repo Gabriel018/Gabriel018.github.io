@@ -5,6 +5,25 @@ let j = 0
 let isDelete = false
 let Frase_Completa = []
 
+
+
+const projeto_py = document.querySelector(".projeto_py")
+
+
+function exibir(){
+
+  
+   if( projeto_py.style.display === "block" ){
+    projeto_py.style.display = "none"
+    }
+     else{
+        projeto_py.style.display = "block"
+     }
+  
+ }
+ 
+
+
 function loop () {
    DisplayText.innerHTML = Frase_Completa.join('')
    if (i < frase.length){
