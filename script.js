@@ -4,6 +4,7 @@ let i = 0
 let j = 0
 let isDelete = false
 let Frase_Completa = []
+
 function loop () {
    DisplayText.innerHTML = Frase_Completa.join('')
    if (i < frase.length){
