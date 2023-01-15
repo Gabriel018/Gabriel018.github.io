@@ -9,6 +9,8 @@ let Frase_Completa = []
 
 const projeto_py = document.querySelector(".projeto_py")
 
+const projeto_js = document.querySelector(".projeto_js")
+
 
 function exibir(){
 
@@ -22,6 +24,20 @@ function exibir(){
   
  }
  
+
+ function exibir_js(){
+
+  
+    if( projeto_js.style.display === "block" ){
+     projeto_js.style.display = "none"
+     }
+      else{
+         projeto_js.style.display = "block"
+      }
+   
+  }
+  
+
 
 
 function loop () {
