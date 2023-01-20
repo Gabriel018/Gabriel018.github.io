@@ -222,6 +222,18 @@ h3::after {
                    }         
                         
 
+.learn_icon{
+  justify-content: center;
+  display: flex;
+  gap: 50px;
+  flex-direction: row;
+}
+
+.img_icon{
+  
+  width: 80px;
+  height: 80px
+}
 
 .footer_vr{
   padding-top: 400px;
