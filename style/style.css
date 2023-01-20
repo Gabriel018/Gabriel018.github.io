@@ -53,6 +53,10 @@ h3::after {
     border-radius: 12px;
 
   }
+  
+ .btn:hover{
+  font-size: 22px;
+ }
 
   .btn-txt{
     
