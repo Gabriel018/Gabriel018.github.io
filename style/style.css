@@ -223,7 +223,9 @@ h3::after {
   padding-top: 400px;
 }
 
-@media screen and (max-width: 490px){
+
+
+@media screen and (max-width: 390px){
 
     .cabecalho {  
         
@@ -237,18 +239,22 @@ h3::after {
     }
 
     .contato {
-        flex-direction: column;
+        font-size: 10px;
+        padding: 5px;
+        flex-direction:row;
+        align-items: flex-start;
+
     }
 
-    .projeto ul {
+    .projeto_py ul {
         padding-top: 300px;
         padding-bottom: 300px;
         flex-direction: column;
     }
 
-    .desktop ul{
-        padding-top: 300px;
-        padding-bottom: 300px;
+    .projeto_js ul{
+        padding-top: 100px;
+        padding-bottom: 100px;
         flex-direction: column;
 
     }
@@ -262,7 +268,7 @@ h3::after {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 10px;
+    font-size: 15px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 12px;
