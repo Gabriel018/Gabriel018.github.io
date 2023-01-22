@@ -229,6 +229,22 @@ h3::after {
   flex-direction: row;
 }
 
+
+.whapp{
+  position: fixed;bottom: 20px;right: 30px;
+}
+
+.img_icon_whapp{
+  width: 80px;
+  height: 80px
+}
+
+.img_icon_whapp:hover{
+  width: 100px;
+  height: 100px
+}
+
+
 .img_icon{
   
   width: 80px;
@@ -274,9 +290,10 @@ h3::after {
         flex-direction: column;
 
     }
-
+     
+   
     .img_icon{
-  
+
       width: 50px;
       height: 50px
     }
