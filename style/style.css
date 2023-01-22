@@ -291,7 +291,10 @@ h3::after {
 
     }
      
-   
+    .img_icon_whapp{
+      width: 40px;
+      height: 40px
+    }
     .img_icon{
 
       width: 50px;
