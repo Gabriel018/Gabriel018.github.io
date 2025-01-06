@@ -59,11 +59,27 @@ function loop () {
 loop()
 
 
-document.getElementById("btn-csharp").addEventListener("click", () =>{
-const cardsCsharp = document.getElementById("card-sharp");
-if (cardsCsharp.style.display === 'none' || cardsCsharp.style.display === '') {
-    cardsCsharp.style.display = 'flex'; 
-} else {
-    cardsCsharp.style.display = 'none'; 
-}
-})
+document.getElementById("btn-csharp").addEventListener("click", () => {
+    const cardsCsharp = document.getElementById("card-sharp");
+  
+    // Exibir ou esconder os cards
+    if (cardsCsharp.style.display === 'none' || cardsCsharp.style.display === '') {
+      cardsCsharp.style.display = 'flex';
+    } else {
+      cardsCsharp.style.display = 'none';
+    }
+  
+    // Carregar o conteúdo do arquivo HTML externo
+    fetch('cards/cards-cscharp.html')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Erro ao carregar arquivo: ${response.statusText}`);
+        }
+        return response.text();
+      })
+      .then(html => {
+        cardsCsharp.innerHTML = html; // Insere o conteúdo no container
+      })
+      .catch(err => console.error('Erro ao carregar os cards:', err));
+  });
+  
