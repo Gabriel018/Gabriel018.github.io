@@ -3,51 +3,84 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <!-- <link rel="stylesheet" href="style/style.css"> -->
+        <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <title>Web Portifolio</title>
     </head>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #530082;">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="img/img_profile.png" alt="" width="120" height="100">
+                <a class="navbar-brand"  href="#">
+                    <img src="img/img_profile.png" class="img-thumbnail" alt="" width="165" height="140">
+                    <div>
+                      <p class="fw-bold text-white">Gabriel SantAnna</p>
+                    </div>
                   </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="collapse navbar-collapse text-center" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Contato</a>
+                    <a class="nav-link active text-white fw-bold h5"  aria-current="page" href="#">Projetos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Projetos</a>
+                    <a class="nav-link active text-white fw-bold h5" href="#">Contato</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Conhecimentos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link active text-white fw-bold h5" href="#">Conhecimentos</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
     </header>
-    <body>
-        <div class="container">
-            <h3 id="text"></h3>
+    <body style="background-color: #8A05BE">
+        <div class="container" style="height: 400px;">
+            <h1 class="text-white fw-bold text-center mt-5 mb-5">Sobre mim</h1>
+            <h3 class="text-white fw-bold" id="text"></h3>
           </div>
           <div class="container">
-            <h1 class="text-center">Projetos</h1>
+            <h1 class="text-center text-white fw-bold mt-5 mb-5 ">Projetos</h1>
           </div>
-          <div class="container text-center mt-4">
-            <button type="button" class="btn btn-primary btn-lg"><img src="img/c-sharp.png" height="70" width="70" ></button>
-            <button type="button" class="btn btn-secondary btn-lg"><img src="img/python.png" height="70" width="70"></button>
-            <button type="button" class="btn btn-primary btn-lg"><img src="img/javascript.png" height="70" width="70" ></button>
-            <button type="button" class="btn btn-secondary btn-lg"><img src="img/angularjs.png" height="70" width="70"></button>
+          <div class="container text-center mt-4" style="height: 400px;">
+            <button id="btn-csharp" type="button" class="btn btn-body btn-lg"><img src="img/c-sharp.png" height="70" width="70" ></button>
+            <button id="btn-python" type="button" class="btn btn-body btn-lg"><img src="img/python.png" height="70" width="70"></button>
+            <button id="btn-js" type="button" class="btn btn-body btn-lg"><img src="img/javascript.png" height="70" width="70" ></button>
+            <button id="btn-angular" type="button" class="btn btn-body btn-lg"><img src="img/angularjs.png" height="70" width="70"></button>
+
+            <div class="card-group" id="card-sharp" style="display: none;">
+              <div class="card">
+                <img src="img/EcommerceNet.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Ecommerce</h5>
+                  <p class="card-text">Pequeno Ecommerce feito em .NET</p>
+                  <a class="card-text" href="https://github.com/Gabriel018/Ecommerce_Eletronic_System"><small class="text-muted">Clique aqui para ver o projeto.</small></a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container text-center mt-4" style="height: 400px;">
+            <h1 class="text-center text-white fw-bold mt-5 mb-5 ">Contatos</h1>
+            <a class="btn btn-body btn-lg" href="https://www.linkedin.com/in/gabriel-santana-04b720177/"><img src="img/linkdin.png" height="70" width="70" ></a>
+            <a class="btn btn-body btn-lg" href="https://github.com/Gabriel018"><img src="img/github.png" height="70" width="70" ></a>
           </div>
     </body>
     <script src="script.js"></script>

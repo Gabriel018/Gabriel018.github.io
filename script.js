@@ -1,16 +1,9 @@
 const DisplayText =  document.getElementById('text')
-const frase =  ['Ola,Meu nome e Gabriel Dev  ','Curto explorar novas tecnologias 💻 e aproveitá-las para criar coisas interessantes 🛠️']
+const frase =  ['Ola,Meu nome e Gabriel SantAnna, trabalho com programação a um tempo, Curto explorar novas tecnologias 💻 e aproveitá-las para criar coisas interessantes 🛠️ utilizando tecnologias como .NET,Python,JS,Angular..']
 let i = 0
 let j = 0
 let isDelete = false
 let Frase_Completa = []
-
-
-
-const projeto_py = document.querySelector(".projeto_py")
-
-const projeto_js = document.querySelector(".projeto_js")
-
 
 function exibir(){
 
@@ -21,24 +14,17 @@ function exibir(){
      else{
         projeto_py.style.display = "block"
      }
-  
  }
  
-
  function exibir_js(){
 
-  
     if( projeto_js.style.display === "block" ){
      projeto_js.style.display = "none"
      }
       else{
          projeto_js.style.display = "block"
       }
-   
   }
-  
-
-
 
 function loop () {
    DisplayText.innerHTML = Frase_Completa.join('')
@@ -63,11 +49,21 @@ function loop () {
         }
 
         }
-        if ( j == frase[i].length){
-            isDelete = true  
-        }
+        // if ( j == frase[i].length){
+        //     isDelete = true  
+        // }
 
-    const  time = isDelete ? 30 : 80
+    const  time = isDelete ? 20 : 60
     setTimeout(loop, time)
 }
 loop()
+
+
+document.getElementById("btn-csharp").addEventListener("click", () =>{
+const cardsCsharp = document.getElementById("card-sharp");
+if (cardsCsharp.style.display === 'none' || cardsCsharp.style.display === '') {
+    cardsCsharp.style.display = 'flex'; 
+} else {
+    cardsCsharp.style.display = 'none'; 
+}
+})
